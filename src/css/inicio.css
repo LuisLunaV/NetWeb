@@ -1,0 +1,81 @@
+.seccion-uno {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3rem 0 3rem;
+  margin: 0;
+  height: 100vh;
+  /* background-color: #fff; */
+  background-image: url(../assets/img/ibm-wall.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (min-width: 780px) {
+  .seccion-uno {
+    /* flex-direction: row; */
+
+    padding-left: 5rem;
+  }
+}
+
+.texto-inicio {
+  color: #fff;
+  max-width: 100%;
+}
+
+@media (min-width: 780px) {
+  .texto-inicio {
+    max-width: 45%;
+  }
+}
+.texto-inicio h1 {
+  text-align: center;
+}
+.texto-inicio p {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+@media (min-width: 780px) {
+  .texto-inicio h1 {
+    text-align: left;
+  }
+  .texto-inicio p {
+    text-align: left;
+  }
+}
+.botones-inicio {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 780px) {
+  .botones-inicio {
+    justify-content: flex-start;
+  }
+}
+
+.botones-inicio a {
+  border: solid 2px #2a94a9;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #268095;
+}
+
+.botones-inicio a:hover {
+  background: linear-gradient(
+    to right,
+    var(--colorSecundario) 0%,
+    var(--colorCuaternario) 100%
+  );
+  color: var(--colorTerciarios);
+  border: solid 2px #1d4d74;
+}

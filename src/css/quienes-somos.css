@@ -1,0 +1,125 @@
+
+/* Quienes somos */
+.seccion-dos {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(
+    to left top,
+    #247a8e,
+    #268095,
+    #27879b,
+    #288da2,
+    #2a94a9
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.8rem 3rem 3rem 3rem;
+  /* justify-content: center; */
+}
+
+@media (min-width: 780px) {
+  .seccion-dos {
+    padding: 5.8rem 5rem 0 5rem;
+    height: 100vh;
+  }
+}
+.seccion-dos h1 {
+  color: #fff;
+  margin: 0;
+}
+
+.texto-quienes-somos {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+
+  font-weight: 700;
+}
+
+.div-quienes-somos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 780px) {
+  .texto-quienes-somos {
+    /* text-align: left; */
+    max-width: 60%;
+    text-align: center;
+  }
+}
+
+.quienes-somos-cita {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+}
+.iconos-quienes-somos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 780px) {
+  .iconos-quienes-somos {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 80%;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1380px) {
+  .iconos-quienes-somos {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 80%;
+    gap: 2rem;
+  }
+}
+.div-icono-quienes-somos {
+  /* border: 5px solid var(--colorCuaternario); */
+  padding: 0 1rem;
+  background-color: var(--colorTerciarios);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--colorSecundario);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+@media (min-width: 780px) {
+  .div-icono-quienes-somos {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1380px) {
+  .div-icono-quienes-somos {
+    padding: 1.5rem;
+  }
+}
+
+.div-icono-quienes-somos i {
+  font-size: 5rem;
+  margin-top: 1rem;
+}
+
+.description-icon-valores p {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+@media (min-width: 1380px) {
+  .description-icon-valores p {
+    margin-top: 1rem;
+
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+}

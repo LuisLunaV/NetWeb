@@ -1,0 +1,101 @@
+
+.seccion-cuatro{
+    overflow: hidden;
+  width: 100%;
+  height: auto;
+  background-color: var(--colorTerciarios);
+  /* background-image: linear-gradient(
+    to left top,
+    #247a8e,
+    #268095,
+    #27879b,
+    #288da2,
+    #2a94a9
+  ); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.8rem 0 1.8rem 0;
+}
+
+@media (min-width: 780px) {
+  .seccion-cuatro {
+    padding: 5.8rem 5rem 0 5rem;
+    height: 100vh;
+  }
+} 
+
+.div-cards-portafolio{  
+  overflow: hidden;
+  width: 90%;
+  height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+}
+
+@media (min-width: 780px) {
+  .div-cards-portafolio {
+  overflow: none;
+    width: 100%;
+  height: 100%;
+    border-radius: none;
+    box-shadow: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2.5rem;
+  }
+}
+.card-portafolio{
+  display: none;
+    background-color: var(--colorTerciarios);
+    border-radius: 10px;
+    width: 100%;
+    height: 80%;
+    grid-row: 1/3;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 780px) {
+  .card-portafolio{
+    display: block !important;
+  }
+}
+.proyecto-1{
+  background-image: url('../assets/img/proyectos/consultas-nip/img-uno.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.proyecto-2{
+  background-image: url('../assets/img/proyectos/drive-thrue/img-uno.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+}
+.proyecto-3{
+  background-image: url('../assets/img/proyectos/turnos-shake/img-uno.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+
+}
+/* .proyecto-4{
+  background-image: url('../assets/img/proyectos/consultas-nip/img-uno.png');
+} */
+
+.div-cards-portafolio-carrucel{
+  display: block !important;
+  width: 100%;
+  height: 500px;
+
+} 
+
+@media (min-width: 780px) {
+  .div-cards-portafolio-carrucel{
+    display: none !important;
+  }
+}
