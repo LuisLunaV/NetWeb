@@ -15,11 +15,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.8rem 0 1.8rem 0;
+  padding: 5rem 0 1.8rem 0;
 }
 
 @media (min-width: 780px) {
   .seccion-cuatro {
+    background-color: var(--colorQuintario);
     padding: 5.8rem 5rem 0 5rem;
     height: 100vh;
   }
@@ -36,6 +37,7 @@
 
 @media (min-width: 780px) {
   .div-cards-portafolio {
+    padding-top: 5rem;
   overflow: none;
     width: 100%;
   height: 100%;
