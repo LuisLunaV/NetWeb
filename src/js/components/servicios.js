@@ -7,11 +7,17 @@ const serviciosCard=[
     {
         id: 'internet',
         component:`<img src="./src/assets/img/publicidad/netweb.jpeg" alt="servicio">`
+    },    {
+        id: 'web',
+        component:`<img src="./src/assets/img/publicidad/devweb.png" alt="servicio">`
+    },{
+        id: 'sistemas',
+        component:`<img src="./src/assets/img/publicidad/sistemas.png" alt="servicio">`
     }
 ]
 
 export const servicios =( servicio, divElement )=>{
-    
+
       // agregamos el componante al div del modal
       const data = serviciosCard.filter( card => card.id === servicio );
       divElement.innerHTML = data[0].component;
@@ -20,7 +26,7 @@ export const servicios =( servicio, divElement )=>{
       if(divElement.children.length != 0){
         setTimeout(() => {
             transicionModal( divElement);
-        }, 1000);
+        }, 500);
        }
     }
 

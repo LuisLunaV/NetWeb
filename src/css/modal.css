@@ -27,8 +27,10 @@
     cursor: pointer;
 }
 .containe-modal{
+    overflow: hidden;
     width: 80%;
     max-width: 450px;
+    /* max-height: 600px; */
     height: auto;
     background: #fff;
     padding: 1rem;
