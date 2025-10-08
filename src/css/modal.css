@@ -1,0 +1,42 @@
+.mostrar-modal{
+    visibility: visible;
+    opacity: 1;
+}
+.ocultar-modal{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.modal-x-closed{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 5.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+.containe-modal{
+    width: 80%;
+    max-width: 450px;
+    height: auto;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transform: translateY(-7%);
+    transition: transform .5s ease;
+}
+
+.traslateY{
+        transform: translateY(0%) !important;
+}

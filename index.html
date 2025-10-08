@@ -27,6 +27,16 @@
         </nav>
       </div>
     </header>
+    <!-- Modal -->
+    <div class="modal ocultar-modal">
+      <div class="modal-x-closed" id="closed">
+            <i class="bi bi-x"></i>
+        </div>
+      <div class="containe-modal">
+        
+      </div>
+    </div>
+    <!-- **************** -->
     <section class="contenedor seccion-uno" id="inicio">
       <div class="texto-inicio">
         <h1>Bienvenidos a <span class="degradado-verde">NETWEB</span></h1>
@@ -94,7 +104,7 @@
       </h1>
       <p>Transformamos desafios en soluciones tecnologicas a la medida.</p>
       <div class="servicios-cards">
-<div class="card-service">
+<div class="card-service" id="redes">
   <i class="bi bi-globe"></i>
   <p>Redes e Infraestructura</p>
     <div class="card-service-text">
@@ -102,28 +112,28 @@
  
   </div>
 </div>
-<div class="card-service">
+<div class="card-service" id="internet">
   <i class="bi bi-router"></i>
   <p>Proveedor de Servicio de Interner</p>
     <div class="card-service-text">
     <p>Conectividad estable y de alta disponibilidad con configuraciones avanzadas para tu empresa.</p>
   </div>
 </div>
-<div class="card-service">
+<div class="card-service" id="web">
   <i class="bi bi-window-sidebar"></i>
   <p>Desarrollo Web</p>
   <div class="card-service-text">
     <p>Creamos sitios web modernos, responsivos y optimizados que reflejan la identidad de tu negocio.</p>
   </div>
 </div>
-<div class="card-service">
+<div class="card-service" id="sistemas">
   <i class="bi bi-gear"></i>
   <p>Desarrollo de Sistemas</p>
     <div class="card-service-text">
     <p>Automatizamos tus procesos con sistemas a medida que mejoran la productividad y el control interno.</p>
   </div>
 </div>
-<div class="card-service">
+<div class="card-service" id="consultoria">
   <i class="bi bi-rocket-takeoff"></i>
   <p>Consultoria Tecnologica</p>
     <div class="card-service-text">
@@ -133,65 +143,11 @@
       </div>
     </section>
 
-    <section class="seccion-cuatro" id="portafolio">
-<div class="div-cards-portafolio">
-  <div class="card-portafolio proyecto-1" id=""></div>
-  <div class="card-portafolio proyecto-2" id=""></div>
-  <div class="card-portafolio proyecto-3" id=""></div>
-  <!-- <div class="card-portafolio" id="proyecto-4"></div> -->
-
-  <div class="div-cards-portafolio-carrucel">
-  <div class="carousel">
-    <ul class="slides">
-      <input type="radio" name="radio-buttons" id="img-1" checked />
-      <li class="slide-container">
-        <div class="slide-image proyecto-1">
-        </div>
-        <div class="carousel-controls">
-          <label for="img-3" class="prev-slide">
-            <span>&lsaquo;</span>
-          </label>
-          <label for="img-2" class="next-slide">
-            <span>&rsaquo;</span>
-          </label>
-        </div>
-      </li>
-      <input type="radio" name="radio-buttons" id="img-2" />
-      <li class="slide-container">
-        <div class="slide-image proyecto-2">
-        </div>
-        <div class="carousel-controls">
-          <label for="img-1" class="prev-slide">
-            <span>&lsaquo;</span>
-          </label>
-          <label for="img-3" class="next-slide">
-            <span>&rsaquo;</span>
-          </label>
-        </div>
-      </li>
-      <input type="radio" name="radio-buttons" id="img-3" />
-      <li class="slide-container">
-        <div class="slide-image proyecto-3">
-        </div>
-        <div class="carousel-controls">
-          <label for="img-2" class="prev-slide">
-            <span>&lsaquo;</span>
-          </label>
-          <label for="img-1" class="next-slide">
-            <span>&rsaquo;</span>
-          </label>
-        </div>
-      </li>
-      <div class="carousel-dots">
-        <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
-        <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
-        <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
-      </div>
-    </ul>
-  </div>
-</div> 
-</div>
+    <section class="seccion-cuatro" id="costos">
+      <h1>Planes de servicios</h1>
     </section>
+
+
     <script src="./src/js/index.js" type="module"></script>
   </body>
 </html>

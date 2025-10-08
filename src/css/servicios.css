@@ -39,6 +39,7 @@
 }
 
 .servicios-cards {
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -53,6 +54,7 @@
   }
 }
 .card-service {
+    cursor: pointer;
   padding: 1rem;
   background-color: #01162b;
   border-radius: 10px;
@@ -62,10 +64,17 @@
   flex-direction: column;
   align-items: center;
 }
+
+
+.card-service:hover i{
+    color: #fff;
+    transition: color 0.3s ease;    
+}
+
 .card-service i {
   font-size: 5rem;
-  margin-top: 1rem;
   color: var(--colorSecundario);
+  margin-top: 1rem;
 }
 
 .card-service p {
