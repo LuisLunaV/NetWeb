@@ -5,7 +5,7 @@
   width: 100%;
   height: auto;
   background-color: var(--colorQuintario);
-  padding: 1.8rem 3rem 3rem 3rem;
+  padding: 1.8rem 1rem 3rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,6 +77,12 @@
   margin-top: 1rem;
 }
 
+
+@media (max-width: 780px) {
+.card-service-text{
+display: none;
+}
+}
 .card-service p {
   text-align: center;
   color: var(--colorTerciarios);

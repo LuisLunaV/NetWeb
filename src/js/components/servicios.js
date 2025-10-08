@@ -2,7 +2,7 @@ import { transicionModal } from '../effects/transicionModal.js';
 const serviciosCard=[
     {
         id: 'redes',
-        component:`<img src="./src/assets/img/publicidad/cam_web.jpeg" alt="servicio">`
+        component:`<img src="./src/assets/img/publicidad/redes.jpeg" alt="servicio">`
     },
     {
         id: 'internet',
@@ -13,6 +13,10 @@ const serviciosCard=[
     },{
         id: 'sistemas',
         component:`<img src="./src/assets/img/publicidad/sistemas.png" alt="servicio">`
+    },
+    {
+        id: 'consultoria',
+        component:`<img src="./src/assets/img/publicidad/asesorias.jpeg" alt="servicio">`
     }
 ]
 
