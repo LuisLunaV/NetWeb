@@ -4,8 +4,8 @@ const cerrar = document.querySelector('#closed');
 cerrar.addEventListener('click',()=>{
    modal.classList.add('ocultar-modal');
    containeModal.classList.remove('traslateY');
-   setTimeout(() => {
-      containeModal.innerHTML = '';
-   }, 500); 
+   // setTimeout(() => {
+      // containeModal.innerHTML = '';
+   // }, 500); 
 });
 }
