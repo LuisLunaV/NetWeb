@@ -26,6 +26,7 @@
   }
 }
 .seccion-dos h1 {
+  text-align: center;
   color: #fff;
   margin: 0;
 }
@@ -59,7 +60,7 @@
 .iconos-quienes-somos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: .7rem;
   margin-top: 2rem;
 }
 
