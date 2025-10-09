@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/css/normalize.css" />
     <link rel="stylesheet" href="./src/css/styles.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -22,19 +25,16 @@
           <a href="#inicio">Inicio</a>
           <a href="#quienes-somos">¿Quiénes somos?</a>
           <a href="#servicios">Servicios</a>
-          <a href="#portafolio">Portafolio</a>
-          <a href="#">Contacto</a>
+          <a href="#contacto">Contacto</a>
         </nav>
       </div>
     </header>
     <!-- Modal -->
     <div class="modal ocultar-modal">
       <div class="modal-x-closed" id="closed">
-            <i class="bi bi-x"></i>
-        </div>
-      <div class="containe-modal">
-        
+        <i class="bi bi-x"></i>
       </div>
+      <div class="containe-modal"></div>
     </div>
     <!-- **************** -->
     <section class="contenedor seccion-uno" id="inicio">
@@ -46,7 +46,7 @@
           excelencia.
         </p>
         <div class="botones-inicio">
-          <a href="#" class="btn-primario">Contáctanos</a>
+          <button class="btn-primario" id="btn_contacto">Contáctanos</button>
         </div>
         <!-- <img src="./assets//img/netweb2.png" alt=""> -->
       </div>
@@ -63,7 +63,7 @@
         </p>
 
         <span class="quienes-somos-cita">Nuestros valores</span>
-        
+
         <div class="iconos-quienes-somos">
           <div class="div-icono-quienes-somos">
             <i class="fa-regular fa-handshake"></i>
@@ -71,7 +71,6 @@
             <div class="description-icon-valores">
               <p>Relaciones sólidas y transparentes.</p>
             </div>
-
           </div>
           <div class="div-icono-quienes-somos">
             <i class="fa-regular fa-gem"></i>
@@ -86,7 +85,6 @@
             <div class="description-icon-valores">
               <p>Soluciones al alcance de todos.</p>
             </div>
-
           </div>
           <div class="div-icono-quienes-somos">
             <i class="fa-solid fa-chart-line"></i>
@@ -99,64 +97,123 @@
       </div>
     </section>
     <section class="seccion-tres" id="servicios">
-      <h1>
-      Estos son los servicios que ofrecemos 
-      </h1>
+      <h1>Estos son los servicios que ofrecemos</h1>
       <p>Transformamos desafios en soluciones tecnologicas a la medida.</p>
       <div class="servicios-cards">
-<div class="card-service" id="redes">
-  <i class="bi bi-globe"></i>
-  <p>Redes e Infraestructura</p>
-    <div class="card-service-text">
-      <div class="card-service-text-inner">
-        <p>Diseñamos y mantenemos redes seguras e integramos cámaras y videovigilancia para mayor control.</p>
-      </div>
- 
-  </div>
-</div>
-<div class="card-service" id="internet">
-  <i class="bi bi-router"></i>
-  <p>Proveedor de Servicio de Interner</p>
-    <div class="card-service-text">
-      <div class="card-service-text-inner">
-        <p>Conectividad estable y de alta disponibilidad con configuraciones avanzadas para tu empresa.</p>
-      </div>
-  </div>
-</div>
-<div class="card-service" id="web">
-  <i class="bi bi-window-sidebar"></i>
-  <p>Desarrollo Web</p>
-  <div class="card-service-text">
-    <div class="card-service-text-inner">
-      <p>Creamos sitios web modernos, responsivos y optimizados que reflejan la identidad de tu negocio.</p>
-      </div>
-  </div>
-</div>
-<div class="card-service" id="sistemas">
-  <i class="bi bi-gear"></i>
-  <p>Desarrollo de Sistemas</p>
-    <div class="card-service-text">
-      <div class="card-service-text-inner">
-        <p>Automatizamos tus procesos con sistemas a medida que mejoran la productividad y el control interno.</p>
-      </div>
-  </div>
-</div>
-<div class="card-service" id="consultoria">
-  <i class="bi bi-rocket-takeoff"></i>
-  <p>Consultoria Tecnologica</p>
-    <div class="card-service-text">
-      <div class="card-service-text-inner">
-        <p>Te guiamos en la adopción de nuevas tecnologías y estrategias digitales para optimizar tu negocio.</p>
-      </div>
-  </div>
-</div>
+        <div class="card-service" id="redes">
+          <i class="bi bi-globe"></i>
+          <p>Redes e Infraestructura</p>
+          <div class="card-service-text">
+            <div class="card-service-text-inner">
+              <p>
+                Diseñamos y mantenemos redes seguras e integramos cámaras y
+                videovigilancia para mayor control.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-service" id="internet">
+          <i class="bi bi-router"></i>
+          <p>Proveedor de Servicio de Interner</p>
+          <div class="card-service-text">
+            <div class="card-service-text-inner">
+              <p>
+                Conectividad estable y de alta disponibilidad con
+                configuraciones avanzadas para tu empresa.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-service" id="web">
+          <i class="bi bi-window-sidebar"></i>
+          <p>Desarrollo Web</p>
+          <div class="card-service-text">
+            <div class="card-service-text-inner">
+              <p>
+                Creamos sitios web modernos, responsivos y optimizados que
+                reflejan la identidad de tu negocio.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-service" id="sistemas">
+          <i class="bi bi-gear"></i>
+          <p>Desarrollo de Sistemas</p>
+          <div class="card-service-text">
+            <div class="card-service-text-inner">
+              <p>
+                Automatizamos tus procesos con sistemas a medida que mejoran la
+                productividad y el control interno.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-service" id="consultoria">
+          <i class="bi bi-rocket-takeoff"></i>
+          <p>Consultoria Tecnologica</p>
+          <div class="card-service-text">
+            <div class="card-service-text-inner">
+              <p>
+                Te guiamos en la adopción de nuevas tecnologías y estrategias
+                digitales para optimizar tu negocio.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="seccion-cuatro" id="costos">
-      <h1>Planes de servicios</h1>
-    </section>
+    <section class="seccion-cuatro" id="contacto">
+      <div class="container-contacto">
+        <div class="icon-contacto">
+          <i class="bi bi-person-circle"></i>
+        </div>
+        <form class="form-contacto" action="">
+          <div class="div-contacto-name-lastname">
+            <div class="div-contacto-name">
+              <label for="div_nombres" class="form-label"
+                >Nombre(s)</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="div_nombres"
+                placeholder="Agrega tu nombre"
+              />
+            </div>
 
+            <div class="div-contacto-lastname">
+              <label for="div_apellidos" class="form-label"
+                >Apellido(s)</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="div_apellidos"
+                placeholder="Agrega tu apellido"
+              />
+            </div>
+          </div>
+
+            <div class="div-contacto-email">
+              <label for="contacto_email" class="form-label"
+                >Correo electronico</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="contacto_email"
+                placeholder="nombre@ejemplo.com"
+              />
+            </div>
+          <div class="div-contacto-textarea">
+            <label for="contacto-textarea">Example textarea</label>
+            <textarea id="contacto-textarea" rows="5" placeholder="Agrega tu mensaje mas numero de contacto (opcional)"></textarea>
+          </div>
+          <input type="submit" value="Enviar" class="btn-submit-contacto" />
+        </form>
+      </div>
+    </section>
 
     <script src="./src/js/index.js" type="module"></script>
   </body>

@@ -5,6 +5,8 @@
 @import url(./portafolio.css);
 @import url(./carrucel.css);
 @import url(./modal.css);
+@import url(./formulario.css);
+@import url(./contacto.css);
 :root {
   --colorPrincipal: #2a94a9;
   --colorSecundario: #247a8e;

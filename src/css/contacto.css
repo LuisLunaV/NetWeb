@@ -1,0 +1,119 @@
+.seccion-cuatro {
+  padding: 2rem 1rem;
+  overflow: hidden;
+  border-top: 2px solid #e0e0e0;
+  background-color: #24495a !important;
+
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 780px) {
+  .seccion-cuatro {
+    padding: 2rem 0;
+    height: auto;
+  }
+}
+.icon-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-contacto i {
+  font-size: 10rem;
+  color: white;
+}
+.form-contacto {
+  color: #fff;
+  padding: 3rem 1.5rem;
+  border: 2px solid #e0e0e0;
+  min-width: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  gap: 2rem;
+}
+
+@media (min-width: 780px) {
+  .form-contacto {
+    padding: 3rem 3rem;
+    min-width: 60rem;
+  }
+}
+.form-contacto input {
+  color: #fff;
+  background: transparent;
+  width: 100%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 2px solid var(--colorTerciarios);
+  border-radius: 5px;
+}
+
+.form-contacto textarea {
+  color: #fff;
+  background: transparent;
+  width: 100%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 2px solid var(--colorTerciarios);
+  border-radius: 5px;
+}
+
+.form-contacto input::placeholder {
+  color: #fff !important;
+}
+.div-contacto-name-lastname {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.div-contacto-name {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.div-contacto-lastname {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+.div-contacto-email {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+.div-contacto-textarea {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.div-contacto-textarea textarea::placeholder {
+  color: #fff;
+}
+.btn-submit-contacto {
+  background-color: var(--colorTerciarios);
+  color: #fff;
+  border: none;
+  padding: 10px 20px !important;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.9rem;
+  transition: background-color 0.3s ease;
+}
+.btn-submit-contacto:hover {
+  background: linear-gradient(
+    to right,
+    var(--colorSecundario) 0%,
+    var(--colorCuaternario) 100%
+  );
+}

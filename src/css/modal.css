@@ -8,6 +8,7 @@
 }
 
 .modal{
+    overflow: hidden;
     position: fixed;
     z-index: 3;
     width: 100%;
@@ -27,9 +28,12 @@
     cursor: pointer;
 }
 .containe-modal{
+    display: flex;
+    justify-content: center;
     overflow: hidden;
     width: 80%;
     max-width: 450px;
+    min-height: 30rem;
     /* max-height: 600px; */
     height: auto;
     background: #fff;
@@ -37,6 +41,7 @@
     border-radius: 0.5rem;
     transform: translateY(-7%);
     transition: transform .5s ease;
+    background-color: transparent;
 }
 
 .traslateY{

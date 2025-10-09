@@ -58,7 +58,8 @@
   }
 }
 
-.botones-inicio a {
+.botones-inicio button{
+  background: transparent;
   border: solid 2px #2a94a9;
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -70,7 +71,7 @@
   color: #268095;
 }
 
-.botones-inicio a:hover {
+.botones-inicio button:hover {
   background: linear-gradient(
     to right,
     var(--colorSecundario) 0%,
