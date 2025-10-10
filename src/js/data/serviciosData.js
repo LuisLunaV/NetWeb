@@ -1,7 +1,7 @@
 export const serviciosCard=[
     {
         id: 'redes',
-        component:`<img src="src/assets/img/publicidad/redes.jpeg" alt="servicio">`
+        component:`<img src="src/assets/img/publicidad/redesCCTV.png" alt="servicio">`
     },
     {
         id: 'internet',

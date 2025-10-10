@@ -1,122 +1,69 @@
-/* From Uiverse.io by ammarsaa */ 
-/* Para detener el scroll cuando el modal este abierto agregar overflow: hidden al body */
-
-.form {
+.form-contacto-modal {
+  color: #fff;
+  padding: 3rem 1.5rem;
+  border: 2px solid #e0e0e0;
+  min-width: 10rem;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 20px;
-  border-radius: 20px;
-  position: relative;
-  background-color: #1a1a1a;
-  color: #fff;
-  border: 1px solid #333;
+  align-items: center;
+  border-radius: 5px;
+  gap: 2rem;
+  background-color: var(--colorQuintario);
 }
 
+@media (min-width: 780px) {
+  .form-contacto-modal {
+    padding: 3rem 3rem;
+    width: auto;
+  background-color: var(--colorQuintario);
 
-.message{
-  font-size: 2.5rem;
-  color:#fff;
-  font-weight: 600;
-  text-align: center;
+  }
 }
 
-.message i{
-    margin-left : 10px;
-font-size: 3rem;
-}
-
-.signin {
-  text-align: center;
-}
-
-.signin a:hover {
-  text-decoration: underline royalblue;
-}
-
-.signin a {
-  color: #00bfff;
-}
-
-.flex {
-  display: flex;
+.form-contacto-modal input {
+  /* color: #fff; */
+  /* background: transparent; */
   width: 100%;
-  gap: 6px;
+  padding: 20px 1px 1px 10px;
+  outline: 0;
+  border: 2px solid var(--colorTerciarios);
+  border-radius: 5px;
 }
 
-.form label {
-  position: relative;
-}
-
-.form label .input {
-
+.form-contacto-modal textarea {
+  /* color: #fff; */
+  /* background: transparent; */
   width: 100%;
   padding: 20px 05px 05px 10px;
   outline: 0;
-  border: 1px solid rgba(105, 105, 105, 0.397);
+  border: 2px solid var(--colorTerciarios);
   border-radius: 5px;
 }
 
-.form label .input + span {
-
-  color: #333;
-  position: absolute;
-  left: 10px;
-  top: 0px;
-  font-size: 0.9em;
-  cursor: text;
-  transition: 0.3s ease;
+.form-contacto-modal input::placeholder {
+  color: #000 !important;
 }
 
-.form label .input:placeholder-shown + span {
-  top: 12.5px;
-  font-size: 0.9em;
-}
+.form-contacto-modal .btn-submit-contacto-modal {
+  background-color: var(--colorQuintario) !important;
+  border: 2px solid var(--colorTerciarios) !important;
 
-.form label .input:focus + span,
-.form label .input:valid + span {
-  color: #333;
-  top: 0px;
-  font-size: 0.7em;
-  font-weight: 600;
-}
-
-.input {
-  font-size: medium;
-}
-
-.form-text-area{
-border-radius: .5rem;
-  padding: 1rem;
-  /* background-color: #333; */
-  /* color: #fff; */
-  width: 100%;
-  outline: 0;
-  border: 1px solid rgba(105, 105, 105, 0.397);
-  font-size: 1.6rem;    
-}
-
-.submit {
-    background-color: #1a1a1a;
-      border: solid 2px #2a94a9;
- font-size: 1.8rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  padding: 1rem 3rem;
+  color: #fff;
+  border: none;
+  padding: 10px 20px !important;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  color: #268095;
+  font-size: 1.9rem;
+  transition: background-color 0.3s ease;
 }
-
-.submit:hover {
+.form-contacto-modal .btn-submit-contacto-modal:hover {
   background: linear-gradient(
     to right,
     var(--colorSecundario) 0%,
     var(--colorCuaternario) 100%
   );
-  color: var(--colorTerciarios);
-  border: solid 2px #1d4d74;
 }
 
-
+.form-contacto-modal .div-contacto-textarea textarea::placeholder {
+  color: #000;
+}

@@ -203,27 +203,16 @@
         <form class="form-contacto" action="">
           <div class="div-contacto-name-lastname">
             <div class="div-contacto-name">
-              <label for="div_nombres" class="form-label">Nombre(s)</label>
+              <label for="div_nombres" class="form-label">Nombre completo</label>
               <input
                 type="text"
                 class="form-control"
                 id="div_nombres"
-                placeholder="Agrega tu nombre"
+                placeholder="Agrega tu nombre y apellidos"
               />
             </div>
 
-            <div class="div-contacto-lastname">
-              <label for="div_apellidos" class="form-label">Apellido(s)</label>
-              <input
-                type="text"
-                class="form-control"
-                id="div_apellidos"
-                placeholder="Agrega tu apellido"
-              />
-            </div>
-          </div>
-
-          <div class="div-contacto-email">
+             <div class="div-contacto-email">
             <label for="contacto_email" class="form-label"
               >Correo electronico</label
             >
@@ -234,8 +223,22 @@
               placeholder="nombre@ejemplo.com"
             />
           </div>
+          
+          </div>
+
+          <div class="div-contacto-asunto">
+            <label for="contacto_email" class="form-label"
+              >Asunto</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="contacto_email"
+              placeholder="Titulo del mensaje"
+            />
+          </div>
+
           <div class="div-contacto-textarea">
-            <label for="contacto-textarea">Example textarea</label>
             <textarea
               id="contacto-textarea"
               rows="5"

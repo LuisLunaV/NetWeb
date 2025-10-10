@@ -81,13 +81,13 @@
   flex-direction: column;
 }
 
-.div-contacto-lastname {
+.div-contacto-email {
   width: 100%;
 
   display: flex;
   flex-direction: column;
 }
-.div-contacto-email {
+.div-contacto-asunto {
   width: 100%;
 
   display: flex;
@@ -178,69 +178,4 @@
 .li-div-contacto p:nth-child(2) {
   font-size: 1.8rem;
 
-}
-
-footer {
-    background-color: var(--colorQuintario);
-    color: #ecf0f1;
-    padding: 2rem 0;
-    margin-top: auto;
-      border-top: 2px solid #e0e0e0;
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.footer-logo img {
-    max-height: 40px;
-    width: auto;
-    filter: brightness(0) invert(1); /* Convierte el logo a blanco */
-}
-
-.footer-text p {
-    margin: 0;
-    font-size: 1.5rem;
-    color: #bdc3c7;
-}
-
-.footer-redes {
-    display: flex;
-    gap: 1rem;
-}
-
-.footer-redes a {
-    color: #ecf0f1;
-    text-decoration: none;
-    font-size: 1.5rem;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.footer-redes a:hover {
-    transform: translateY(-2px);
-}
-
-.footer-redes .bi-facebook:hover { color: #3b5998; }
-.footer-redes .bi-twitter:hover { color: #1da1f2; }
-.footer-redes .bi-linkedin:hover { color: #0077b5; }
-.footer-redes .bi-instagram:hover { color: #e4405f; }
-
-/* Responsive */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 1.5rem;
-    }
-    
-    .footer-text {
-        order: 3;
-    }
 }
