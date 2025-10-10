@@ -164,6 +164,38 @@
     </section>
 
     <section class="seccion-cuatro" id="contacto">
+      <div class="container-information-contacto">
+        <ul>
+          <li>
+            <div class="li-div-icon">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="li-div-contacto">
+              <p>Telefono 1</p>
+              <p>+52 221 525 8029</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="li-div-icon">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="li-div-contacto">
+              <p>Telefono 2</p>
+              <p>+52 221 230 10 84</p>
+            </div>
+          </li>
+          <li>
+            <div class="li-div-icon">
+              <i class="bi bi-envelope-at-fill"></i>
+            </div>
+            <div class="li-div-contacto">
+              <p>Correo electronico</p>
+              <p>netweb@outlook.com</p>
+            </div>
+          </li>
+        </ul>
+      </div>
       <div class="container-contacto">
         <div class="icon-contacto">
           <i class="bi bi-person-circle"></i>
@@ -171,9 +203,7 @@
         <form class="form-contacto" action="">
           <div class="div-contacto-name-lastname">
             <div class="div-contacto-name">
-              <label for="div_nombres" class="form-label"
-                >Nombre(s)</label
-              >
+              <label for="div_nombres" class="form-label">Nombre(s)</label>
               <input
                 type="text"
                 class="form-control"
@@ -183,9 +213,7 @@
             </div>
 
             <div class="div-contacto-lastname">
-              <label for="div_apellidos" class="form-label"
-                >Apellido(s)</label
-              >
+              <label for="div_apellidos" class="form-label">Apellido(s)</label>
               <input
                 type="text"
                 class="form-control"
@@ -195,26 +223,45 @@
             </div>
           </div>
 
-            <div class="div-contacto-email">
-              <label for="contacto_email" class="form-label"
-                >Correo electronico</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="contacto_email"
-                placeholder="nombre@ejemplo.com"
-              />
-            </div>
+          <div class="div-contacto-email">
+            <label for="contacto_email" class="form-label"
+              >Correo electronico</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="contacto_email"
+              placeholder="nombre@ejemplo.com"
+            />
+          </div>
           <div class="div-contacto-textarea">
             <label for="contacto-textarea">Example textarea</label>
-            <textarea id="contacto-textarea" rows="5" placeholder="Agrega tu mensaje mas numero de contacto (opcional)"></textarea>
+            <textarea
+              id="contacto-textarea"
+              rows="5"
+              placeholder="Agrega tu mensaje mas numero de contacto (opcional)"
+            ></textarea>
           </div>
           <input type="submit" value="Enviar" class="btn-submit-contacto" />
         </form>
       </div>
     </section>
-
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="./src/assets/img/netweb2.png" alt="" />
+        </div>
+        <div class="footer-text">
+          <p>© 2024 NETWEB. Todos los derechos reservados.</p>
+        </div>
+        <div class="footer-redes">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>  
+    </footer>
     <script src="./src/js/index.js" type="module"></script>
   </body>
 </html>
