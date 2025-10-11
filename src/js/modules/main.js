@@ -1,5 +1,5 @@
 import { efectoScrollEnNav } from "../effects/efectoScrollEnNav.js";
-import { serviciosCards, cerrarModal, btnContactoEvent } from "../events/index.js";
+import { serviciosCards, cerrarModal, btnContactoEvent, sendMessage } from "../events/index.js";
 export class Main {
   constructor() {
     this.header = document.querySelector(".headers");
@@ -8,6 +8,8 @@ export class Main {
     this.serviciosCards = document.querySelector(".servicios-cards");
     this.btnContacto = document.querySelector("#btn_contacto");
     this.containerModal = document.querySelector(".containe-modal");
+    this.formularioMsg = document.querySelector("#form_contacto");
+ 
 
     // Detectamos la posicion del scroll para ocultar o mostrar la barra nav
     this.detectorScroll();
@@ -23,6 +25,9 @@ export class Main {
     serviciosCards(this.serviciosCards, this.containerModal);
     btnContactoEvent(this.btnContacto, this.containerModal );
     cerrarModal(this.containerModal);
+    
+    // Obtenemos los eventos del formulario de contacto
+    sendMessage(this.formularioMsg);
   }
   detectorScroll() {
     window.addEventListener("scroll", () =>

@@ -13,6 +13,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
     <title>WEBNET</title>
   </head>
   <body>
@@ -200,41 +202,46 @@
         <div class="icon-contacto">
           <i class="bi bi-person-circle"></i>
         </div>
-        <form class="form-contacto" action="">
+        <form class="form-contacto"  id="form_contacto">
           <div class="div-contacto-name-lastname">
             <div class="div-contacto-name">
-              <label for="div_nombres" class="form-label">Nombre completo</label>
+              <label for="div_nombres" class="form-label"
+                >Nombre completo</label
+              >
               <input
                 type="text"
                 class="form-control"
                 id="div_nombres"
+                name="Mensaje_Name"
                 placeholder="Agrega tu nombre y apellidos"
+                required
               />
             </div>
 
-             <div class="div-contacto-email">
-            <label for="contacto_email" class="form-label"
-              >Correo electronico</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="contacto_email"
-              placeholder="nombre@ejemplo.com"
-            />
-          </div>
-          
+            <div class="div-contacto-email">
+              <label for="contacto_email" class="form-label"
+                >Correo electronico</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="contacto_email"
+                name="Mensaje_Email"
+                placeholder="nombre@ejemplo.com"
+                required
+              />
+            </div>
           </div>
 
           <div class="div-contacto-asunto">
-            <label for="contacto_email" class="form-label"
-              >Asunto</label
-            >
+            <label for="contacto_email" class="form-label">Asunto</label>
             <input
               type="text"
               class="form-control"
               id="contacto_email"
+              name="Mensaje_Asunto"
               placeholder="Titulo del mensaje"
+              required
             />
           </div>
 
@@ -242,7 +249,9 @@
             <textarea
               id="contacto-textarea"
               rows="5"
+              name="Mensaje_Body"
               placeholder="Agrega tu mensaje mas numero de contacto (opcional)"
+              required
             ></textarea>
           </div>
           <input type="submit" value="Enviar" class="btn-submit-contacto" />
@@ -263,7 +272,7 @@
           <a href="#"><i class="bi bi-linkedin"></i></a>
           <a href="#"><i class="bi bi-instagram"></i></a>
         </div>
-      </div>  
+      </div>
     </footer>
     <script src="./src/js/index.js" type="module"></script>
   </body>
