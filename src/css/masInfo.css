@@ -1,0 +1,48 @@
+.seccion-info {
+  background-color: var(--colorQuintario);
+  padding: 5rem 2rem;
+  text-align: center;
+  color: #fff;
+  border-top: 2px solid #e0e0e0;
+}
+
+.seccion-info h2 {
+  font-size: 2.8rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.seccion-info p {
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  color: var(--colorSecundario);
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.btn-descarga {
+  background: transparent;
+  border: solid 2px #2a94a9;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #268095;
+}
+
+.btn-descarga i {
+  font-size: 1.8rem;
+}
+
+.btn-descarga:hover {
+  background: linear-gradient(
+    to right,
+    var(--colorSecundario) 0%,
+    var(--colorCuaternario) 100%
+  );
+  color: var(--colorTerciarios);
+  border: solid 2px #1d4d74;
+}
