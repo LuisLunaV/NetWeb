@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://luislunaapiweb.loca.lt/panel/api/v1/netweb_send';
+const API_BASE_URL = 'https://luislunaapiweb.loca.lt/netweb/api/v1/netweb_send';
 
 const sendMessagePost = async( payload )=>{
     try {
