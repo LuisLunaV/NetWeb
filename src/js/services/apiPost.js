@@ -1,11 +1,13 @@
-const API_BASE_URL = 'http://localhost:8080/netweb/api/v1/netweb_send';
+const API_BASE_URL = 'https://luislunaapiweb.loca.lt/panel/api/v1/netweb_send';
+
 const sendMessagePost = async( payload )=>{
     try {
         const resp = await fetch(API_BASE_URL, {
             method: 'POST',
             body: JSON.stringify(payload),
             headers: {
-                'Content-Type': 'application/json'             
+                'Content-Type': 'application/json',
+                "Bypass-Tunnel-Reminder": "true"             
             }
         });
 
