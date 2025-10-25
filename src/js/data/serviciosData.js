@@ -1,7 +1,7 @@
 export const serviciosCard=[
     {
         id: 'redes',
-        component:`<img src="./assets/img/redesCCTV.webp" alt="servicio">`
+        component:`<img src="./assets/img/publicidad/redesCCTV.webp" alt="servicio">`
     },
     {
         id: 'internet',
