@@ -1,65 +1,99 @@
-
 footer {
-    background-color: var(--colorQuintario);
-    color: #ecf0f1;
-    padding: 2rem 0;
-    margin-top: auto;
-      border-top: 2px solid #e0e0e0;
+  background-color: var(--colorQuintario);
+  color: #ecf0f1;
+  padding: 2rem 0;
+  margin-top: auto;
+  border-top: 2px solid #e0e0e0;
 }
 
 .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .footer-logo img {
-    max-height: 40px;
-    width: auto;
-    filter: brightness(0) invert(1); /* Convierte el logo a blanco */
+  max-height: 40px;
+  width: auto;
+  filter: brightness(0) invert(1); /* Convierte el logo a blanco */
 }
 
 .footer-text p {
-    margin: 0;
-    font-size: 1.5rem;
-    color: #bdc3c7;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #bdc3c7;
 }
 
 .footer-redes {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .footer-redes a {
-    color: #ecf0f1;
-    text-decoration: none;
-    font-size: 1.5rem;
-    transition: color 0.3s ease, transform 0.3s ease;
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer-redes a:hover {
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
-.footer-redes .bi-facebook:hover { color: #3b5998; }
-.footer-redes .bi-twitter:hover { color: #1da1f2; }
-.footer-redes .bi-linkedin:hover { color: #0077b5; }
-.footer-redes .bi-instagram:hover { color: #e4405f; }
+.footer-redes .bi-facebook:hover {
+  color: #3b5998;
+}
+.footer-redes .bi-twitter:hover {
+  color: #1da1f2;
+}
+.footer-redes .bi-linkedin:hover {
+  color: #0077b5;
+}
+.footer-redes .bi-instagram:hover {
+  color: #e4405f;
+}
+.anchor-twitter {
+  display: block;
+}
+.anchor-linkedin {
+  display: block;
+}
+
+.anchor-phone-one {
+  display: none;
+}
+.anchor-phone-two {
+  display: none;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 1.5rem;
-    }
-    
-    .footer-text {
-        order: 3;
-    }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .footer-text {
+    order: 3;
+  }
+
+  .anchor-twitter {
+    display: none;
+  }
+  .anchor-linkedin {
+    display: none;
+  }
+
+  .anchor-phone-one {
+    display: block;
+  }
+  .anchor-phone-two {
+    display: block;
+  }
 }
